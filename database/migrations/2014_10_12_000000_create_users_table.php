@@ -19,9 +19,15 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->boolean('is_admin');
             $table->rememberToken();
+            $table->string('phone_number')->nullable();
             $table->foreignId('current_team_id')->nullable();
-            $table->string('profile_photo_path', 2048)->nullable();
+            $table->string('photo_path')->nullable();
+            $table->text('bio')->nullable();
+            $table->boolean('gender')->nullable();
+            $table->date('birthday')->nullable();
+            $table->integer('points');
             $table->timestamps();
         });
     }

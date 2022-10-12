@@ -20,6 +20,8 @@ class UserSeeder extends Seeder
             'name' => 'Mohammed',
             'email' => 'mohammed@gamil.com',
             'password' => bcrypt('121212'),
+            'is_admin' => true,
+            'points' => 20
         ]);
 
         // id = 2
@@ -27,6 +29,8 @@ class UserSeeder extends Seeder
             'name' => 'Fatma Nawfal',
             'email' => 'fatma.nawfal@gamil.com',
             'password' => bcrypt('121212'),
+            'is_admin' => true,
+            'points' => 20
         ]);
     }
 }
