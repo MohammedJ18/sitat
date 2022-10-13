@@ -16,7 +16,7 @@ class ProjectSeeder extends Seeder
     public function run()
     {
         // project id = 1
-        Project::created([
+        Project::create([
             'user_id' => 1,
             'title' => 'first project',
             'content' => 'any think about our first project',
@@ -25,7 +25,7 @@ class ProjectSeeder extends Seeder
         ]);
 
         // project id = 2
-        Project::created([
+        Project::create([
             'user_id' => 2,
             'title' => 'second project',
             'content' => 'any think about our second project',

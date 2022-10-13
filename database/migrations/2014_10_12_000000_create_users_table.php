@@ -19,13 +19,13 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->boolean('is_admin');
+            $table->boolean('is_admin')->default(false); //  true admin, false user
             $table->rememberToken();
             $table->string('phone_number')->nullable();
             $table->foreignId('current_team_id')->nullable();
-            $table->string('photo_path')->nullable();
+            $table->string('profile_photo_path')->nullable();
             $table->text('bio')->nullable();
-            $table->boolean('gender')->nullable();
+            $table->boolean('gender')->nullable(); //true female, false mohammed
             $table->date('birthday')->nullable();
             $table->integer('points');
             $table->timestamps();
