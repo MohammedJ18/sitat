@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('service_opinions', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('service_id');
+            $table->foreign('service_id')->references('id')->on('service_opinions');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('service_opinions');
             // $table->foreignId('service_id')->constrained();
             // $table->foreignId('user_id')->constrained();
             $table->text('content');

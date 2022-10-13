@@ -15,8 +15,12 @@ return new class extends Migration
     {
         Schema::create('project_comments', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('project_id')->constrained();
-            $table->foreignId('user_id')->constrained();
+            $table->unsignedBigInteger('project_id');
+            $table->foreign('project_id')->references('id')->on('service_opinions');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('service_opinions');
+            // $table->foreignId('project_id')->constrained();
+            // $table->foreignId('user_id')->constrained();
             $table->text('content');
             $table->timestamps();
         });
