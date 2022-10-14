@@ -15,8 +15,9 @@ return new class extends Migration
     {
         Schema::create('service_users', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
-            $table->foreignId('service_id')->nullable()->constrained();
+           // $table->foreignId('user_id')->nullable();
+            $table->foreignId('user_id')->index();
+            $table->foreignId('service_id')->index();
             $table->integer('points');
             $table->timestamps();
         });

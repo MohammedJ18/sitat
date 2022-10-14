@@ -16,6 +16,7 @@ class ServicesSeeder extends Seeder
     public function run()
     {
         Services::create([
+            'user_id'=>1,
             'title' => 'dont know',
             'content' => 'also dont know',
             'points' => 1111,

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('service_images', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('service_id')->nullable()->constrained();
+            $table->foreignId('service_id')->index();
             $table->string('path');
             $table->timestamps();
         });

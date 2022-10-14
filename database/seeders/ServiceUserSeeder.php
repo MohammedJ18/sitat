@@ -17,7 +17,8 @@ class ServiceUserSeeder extends Seeder
     {
         ServiceUser::create([
             'service_id'=>1,
-            'point' => 2222,
+            'user_id'=>1,
+            'points' => 2222,
         ]);
     }
 }
