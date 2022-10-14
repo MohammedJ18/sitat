@@ -21,5 +21,12 @@ class ServiceOpinionSeeder extends Seeder
             'content' => 'laravel',
             'stars' => '5',
         ]);
+        
+        ServiceOpinion::create([
+            'service_id' => '1',
+            'user_id' => '1',
+            'content' => 'laravel',
+            'stars' => '5',
+        ]);
     }
 }

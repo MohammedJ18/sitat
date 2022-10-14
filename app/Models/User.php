@@ -58,4 +58,16 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function serviceOpinions(){
+
+        return $this->hasMany(ServiceOpinion::class);
+
+    }
+
+    public function projectComments(){
+
+        return $this->hasMany(ProjectComment::class);
+
+    }
 }
