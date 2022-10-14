@@ -19,5 +19,15 @@ class ProjectImageSeeder extends Seeder
             'project_id' => 1,
             'path' => 'https://miro.medium.com/max/1400/1*m0s2io11J82PR7miqan92w.png'
         ]);
+
+        ProjectImage::create([
+            'project_id' => 1,
+            'path' => 'https://miro.medium.com/max/1400/1*m0s2io11J82PR7miqan92w.png'
+        ]);
+
+        ProjectImage::create([
+            'project_id' => 1,
+            'path' => 'https://miro.medium.com/max/1400/1*m0s2io11J82PR7miqan92w.png'
+        ]);
     }
 }

@@ -9,4 +9,10 @@ class ProjectImage extends Model
 {
     use HasFactory;
     protected $fillable = ['project_id', 'path'];
+
+    // =============================== RELATIONS ===============================//
+    public function project()
+    {
+        return $this->belongsTo(Project::class);
+    }
 }
