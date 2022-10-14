@@ -35,6 +35,15 @@ class User extends Authenticatable
         'bio',
         'birthday'
     ];
+    
+    public function services()
+    {
+        return $this->belongsToMany(Services::class, 'service_users');
+    }
+
+
+
+
 
     /**
      * The attributes that should be hidden for serialization.
