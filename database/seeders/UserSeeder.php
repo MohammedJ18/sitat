@@ -54,6 +54,7 @@ class UserSeeder extends Seeder
             'name' => 'Ddd',
             'email' => 'fatma1@gamil.com',
             'password' => bcrypt('121212'),
+            'points' => 20
         ]);
         
     }
