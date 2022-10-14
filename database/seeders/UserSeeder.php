@@ -41,5 +41,13 @@ class UserSeeder extends Seeder
             'is_admin' => true,
             'points' => 20
         ]);
+        
+        User::create([
+            'name' => 'Fatima2',
+            'email' => 'fatima2@gamil.com',
+            'password' => bcrypt('121212'),
+        ]);
+    
+    
     }
 }
