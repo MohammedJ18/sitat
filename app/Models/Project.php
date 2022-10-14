@@ -11,8 +11,9 @@ class Project extends Model
     protected $fillable = ['user_id', 'title', 'content', 'status', 'points'];
 
     // =============================== RELATIONS ===============================//
-    public function projectImages()
-    {
-        return $this->hasMany(ProjectImage::class);
-    }
+        // =============================== RELATIONS ===============================//
+
+
+    // =============================== RELATIONS ===============================//
+
 }
