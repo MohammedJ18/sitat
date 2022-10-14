@@ -26,5 +26,6 @@ class UserSeeder extends Seeder
             'email' => 'fatma1@gamil.com',
             'password' => bcrypt('121212'),
         ]);
+        
     }
 }

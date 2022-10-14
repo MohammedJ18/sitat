@@ -20,5 +20,17 @@ class ServiceImagesSeeder extends Seeder
             'path'=>'wewewww',
             
         ]);
+
+        ServiceImages::create([
+            'service_id' => 1,
+            'path' => 'wewewww',
+
+        ]);
+
+        ServiceImages::create([
+            'service_id' => 1,
+            'path' => 'wewewww',
+
+        ]);
     }
 }

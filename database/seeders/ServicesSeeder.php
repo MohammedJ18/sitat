@@ -23,5 +23,14 @@ class ServicesSeeder extends Seeder
             'puichase_times'=>'11',
                 
         ]);
+
+        Services::create([
+            'user_id' => 1,
+            'title' => 'dont know',
+            'content' => 'also dont know',
+            'points' => 1111,
+            'puichase_times' => '11',
+
+        ]);
     }
 }
