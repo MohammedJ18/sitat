@@ -8,6 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     use HasFactory;
-
     protected $fillable = ['user_id', 'title', 'content', 'status', 'points'];
+
+    // =============================== RELATIONS ===============================//
+        // =============================== RELATIONS ===============================//
+
+
+    // =============================== RELATIONS ===============================//
+
 }

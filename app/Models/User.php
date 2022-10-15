@@ -27,7 +27,23 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_admin',
+        'points',
+        'gender',
+        'phone_number',
+        'photo_path',
+        'bio',
+        'birthday'
     ];
+    
+    public function services()
+    {
+        return $this->belongsToMany(Services::class, 'service_users');
+    }
+
+
+
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -58,4 +74,24 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    // =============================== RELATIONS ===============================//
+    public function projects()
+    {
+        return $this->hasMany(Project::class);
+    }
+
+    public function serviceOpinions(){
+
+        return $this->hasMany(ServiceOpinion::class);
+
+    }
+
+    public function projectComments(){
+
+        return $this->hasMany(ProjectComment::class);
+
+    }
+
+    // =============================== RELATIONS ===============================//
 }
